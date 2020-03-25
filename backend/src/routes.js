@@ -6,7 +6,7 @@ const SessionController = require("./controllers/SessionController");
 
 routes.get("/ongs", OngController.index);
 routes.post("/ongs", OngController.create);
-routes.delete("/ongs", OngController.delete);
+routes.delete("/ongs/:id", OngController.delete);
 
 routes.get("/profile", ProfileController.index);
 

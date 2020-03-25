@@ -23,8 +23,9 @@ module.exports = {
     res.json({ id });
   },
   async delete(req, res) {
+    const { id } = req.params;
     await connection("ongs")
-      .where("name", "APAD")
+      .where("id", id)
       .del();
     return res.send("ong removed");
   }
