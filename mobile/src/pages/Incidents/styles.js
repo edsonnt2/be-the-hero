@@ -10,7 +10,8 @@ export default StyleSheet.create({
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: 10
   },
   headerText: {
     fontSize: 15,
@@ -22,17 +23,15 @@ export default StyleSheet.create({
   title: {
     fontSize: 30,
     marginBottom: 16,
-    marginTop: 48,
+    marginTop: 38,
     color: "#13131a",
     fontWeight: "bold"
   },
   description: {
     fontSize: 16,
     lineHeight: 24,
-    color: "#737380"
-  },
-  incidentList: {
-    marginTop: 32
+    color: "#737380",
+    marginBottom: 32
   },
   incident: {
     padding: 24,
